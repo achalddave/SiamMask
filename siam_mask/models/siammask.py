@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from utils.anchors import Anchors
+from siam_mask.utils.anchors import Anchors
 
 
 class SiamMask(nn.Module):

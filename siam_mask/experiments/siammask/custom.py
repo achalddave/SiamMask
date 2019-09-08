@@ -3,15 +3,15 @@
 # Licensed under The MIT License
 # Written by Qiang Wang (wangqiang2015 at ia.ac.cn)
 # --------------------------------------------------------
-from models.siammask import SiamMask
-from models.features import Features
-from models.rpn import RPN, DepthCorr
-from models.mask import Mask
+from siam_mask.models.siammask import SiamMask
+from siam_mask.models.features import Features
+from siam_mask.models.rpn import RPN, DepthCorr
+from siam_mask.models.mask import Mask
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from utils.load_helper import load_pretrain
-from resnet import resnet50
+from siam_mask.utils.load_helper import load_pretrain
+from siam_mask.experiments.siammask.resnet import resnet50
 
 
 class ResDownS(nn.Module):
